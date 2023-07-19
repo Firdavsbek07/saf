@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --blue: #00c7ff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+box-icon{
+    width: 25px;
+}
+
+/* ==== contact ==== */
+
+.nav{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    border-bottom: 1px solid #00000034;
+}
+
+.nav .top__left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .top__left .left__side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav .top__left .right__side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.nav .top__left .vl{
+    width: 1px;
+    height: 2.5vh;
+    background-color: #00000071;
+}
+
+.nav .top__right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .top__right .main__chapter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav .top__right .main__chapter .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5vh;
+    margin-left: 15px;
+    border-right: 2px solid #0000005f;
+    padding-right: 15px;
+}
+
+.nav .top__right .main__chapter .link a{
+    margin-left: 2px;
+    transition: 0.5s;
+    color: #333;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav .top__right .main__chapter .link li{
+    font-weight: 500;
+    color: #000;
+}
+
+.nav .top__right .main__chapter .link a:hover{
+    color: var(--blue);
+    transition: 0.5s;
+}
+
+/* ==== logos & other ==== */
+
+
+.search__logos__chapter{
+    margin-top: 0.5cm;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Logo */
+
+.search__logos__chapter .logo img{
+    width: 180px;
+}
+
+/* Search */
+
+.search__logos__chapter .search{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__logos__chapter .search input{
+    width: 80%;
+    height: 50px;
+    padding: 15px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: 1px solid #33333386;
+}
+
+.search__logos__chapter .search span{
+    height: 50px;
+    width: 50px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    transition: background .5s;
+}
+
+.search__logos__chapter .search span:hover{
+    background-color: var(--blue);
+    transition: background .5s;
+}
+
+/* icons-links */
+
+.search__logos__chapter .fav__acc__cart{
+    margin-right: 100px;
+}
+
+.search__logos__chapter .fav__acc__cart span{
+    margin-left: 15px;
+}
+
+.search__logos__chapter .fav__acc__cart .with__two::before{
+    content: '2';
+    position: absolute;
+    top: 105px;
+    right: 195px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+
+/* ==== Main NavBar ==== */
+
+header{
+    position: fixed;
+    top: 25vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+}
+
+.nav__main{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__main .categories{
+    width: 300px;
+    height: 10vh;
+    background-color: var(--blue);
+    margin-right: 20px;
+}
+
+.nav__main .categories h1{
+    color: #fff;
+    margin-left: 70px;
+    margin-top: -25px;
+}
+
+.nav__main .categories .burger {
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+  
+.nav__main .categories .burger div {
+    height: 3px;
+    width: 27px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: transform 0.3s linear;
+}
+
+.nav__main .nav__links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav__main .nav__links li {
+    list-style: none;
+    background-color: var(--blue);
+    /* height: 10vh; */
+}
+
+.nav__main .nav__links a{
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    margin-top: 150px;
+}
+
+.nav__main .nav__links ul:hover{
+    /* border: 27px solid var(--blue); */
+    background-color: var(--blue);
+}
